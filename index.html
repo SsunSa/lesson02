@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///C:/Users/sarah/Desktop/webd168/lesson02/selector_basics_start.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Selector Basics</title>
+    <link rel="stylesheet" href="./Selector Basics_files/css">
+    <style>
+      body {
+        background-color: rgb(50,122,167);
+        padding: 0 20px 20px 20px;
+        margin: 0;
+      }
+      p {
+        color: rgba(255,255,255,.6);
+        font-size: 1em;
+        font-family: "Varela Round", Arial, Helvetica, sans-serif;
+      }
+      h1, h2, h3 {
+        color: rgb(255,255,255);
+        font-family: Arial, "Palatino Linotype", Times, serif;
+        border-block-start: 2px solid rgb(87,185,178);
+        padding-top: 10px;
+        padding-bottom: 5px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      #logo {
+        font-family: Baskerville, Palatino, sans-serif;
+        font-size: 2em;
+        color: rgba(255,255,255,.8);
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: rgb(191,91,116);
+        border-radius: 0 0 10px 10px;
+        padding: 10px;
+      }
+      .note {
+        color: #000;
+        border: 2px solid #fff;
+        background-color: rgb(69,189,102);
+        margin-top: 25px;
+        margin-bottom: 35px;
+        padding: 20px;
+      }
+      .note strong {
+        color: #fc6512;
+      }
+      article {
+        max-width: 760px;
+        margin: 0 auto;
+      }
+      h1 + p {
+        color: rgb(255,255,255);
+        font-size: 1.2em;
+        line-height: 140%;
+      }
+
+      /* ✅ Attribute Selector: make link with title="green" green */
+      a[title="green"] {
+        color: limegreen;
+        font-weight: bold;
+      }
+
+      /* ✅ Child Type Selector for italicizing "Me Neither!" (3rd h3 element) */
+      article > h3:nth-of-type(2) {
+        font-style: italic;
+      }
+
+      /* ✅ Custom class for "Not Me!" heading */
+      .not-me-heading {
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding-left: 10px;
+        border-left: 4px solid #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <header><div id="logo">CSS: The Missing Manual</div></header>
+
+    <article>
+      <h1>The Amazing World of CSS</h1>
+      <p>
+        <strong><a href="file:///C:/en-US/docs/Glossary/CSS" title="green">CSS</a></strong> (Cascading
+        Style Sheets) allows you to create great-looking web pages. Cascading
+        Style Sheets (CSS) is a style sheet language used for describing the
+        presentation of a document written in a markup language such as HTML.
+        CSS is a cornerstone technology of the World Wide Web, alongside HTML
+        and JavaScript.
+      </p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem...
+      </p>
+      <p class="note">
+        <strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+        commodi consequatur?
+      </p>
+
+      <h2>Who Knew CSS Had Such Power?</h2>
+      <p>
+        Separation of formatting and content also makes it feasible to present
+        the same markup page in different styles for different rendering methods...
+      </p>
+      <p class="note">
+        <strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+        commodi consequatur?
+      </p>
+
+      <!-- ✅ Updated h3 with class and paragraph content -->
+      <h3 class="not-me-heading">Not Me!</h3>
+      <p>
+        I’m becoming more confident using CSS to style webpages. Chapter 3 of *CSS: The Missing Manual* really helped clarify how selectors work, especially attribute selectors and how to target specific elements. Using child type selectors and combining classes with attributes has been a game-changer. I appreciate how CSS separates content from presentation, making sites easier to maintain and adapt across devices.
+      </p>
+
+      <!-- ✅ Italic "Me Neither!" heading via child selector -->
+      <h3>Me Neither!</h3>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem...
+      </p>
+    </article>
+  
+
+</body></html>
